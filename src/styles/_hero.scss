@@ -1,0 +1,38 @@
+.hero {
+    padding-top: 64px;
+    background-image:url(../images/birthday-1697353.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .6;
+    }
+
+    &__text {
+        margin-top: 300px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    @media (max-width:640px) {
+        &__text {
+            font-size: 26px;
+            line-height: 24px
+        }
+    }
+};
